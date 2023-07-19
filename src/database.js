@@ -15,7 +15,7 @@ export class Database {
     fs.writeFile(databasePath, JSON.stringify(this.#database))
   }
 
-  select(table) {
+  list(table) {
     const data = this.#database[table] ?? []
     return data
   }
